@@ -1,0 +1,145 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.page {
+  display: flex;
+  flex-wrap: wrap;
+}
+h1, h2, h3, h4, h5, h6 {
+  font-family: sans-serif;
+}
+.menu-container {
+  display: flex;                /* This enables the flexbox layout mode */
+  justify-content: center;      /* We can use it to center our .menu */
+  color: #696969;               /* Dark grey */
+  background-color: #DCDCDC;    /* Light grey */
+  padding: 20px 0;
+}
+.menu {
+  display: flex;
+  justify-content: space-between;
+}
+.name {
+  padding-left: 20px;
+}
+.about {
+  margin-left: 20px;
+  padding-right: 20px;
+}
+/*.links {
+  display: flex;
+  justify-content: flex-end;
+}*/
+.header-container {
+  display: flex;
+  color: #696969;
+  background-color: #FFF;
+  justify-content: space-between;
+}
+.header-container-about {
+  display: flex;
+  color: #696969;
+  background-color: #FFF;
+  justify-content: space-between;
+}
+.header-1 {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;            /* Vertical alignment is defined by adding an align-items property to a flex container.*/
+  padding-left: 20px;
+}
+.header-1-about {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;           /* Vertical alignment is defined by adding an align-items property to a flex container.*/
+  padding-left: 20px;
+}
+.header-2 {
+  display: flex;
+  justify-content: flex-start;
+  align-items:flex-end;         /* Vertical alignment is defined by adding an align-items property to a flex container.*/
+  padding-bottom: 20px;
+}
+.header-2-about {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;            /* Vertical alignment is defined by adding an align-items property to a flex container.*/
+  padding-bottom: 20px;
+}
+.feature-container {
+  background-color: #FFF;
+  width: 640px;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap
+}
+.feature-1 {
+  display: flex;
+  justify-content: center;
+  align-items: baseline;           /* Vertical alignment is defined by adding an align-items property to a flex container.*/
+  padding-bottom: 20px;
+}
+.feature-2 {
+  display: flex;
+  justify-content: center;
+  align-items: baseline;            /* Vertical alignment is defined by adding an align-items property to a flex container.*/
+  padding-bottom: 20px;
+}
+.footer-container {
+  display: flex;                /* This enables the flexbox layout mode */
+  justify-content:flex-end;
+  align-items: center;      /* We can use it to center our .menu */
+  color: #696969;               /* Dark grey */
+  background-color: #DCDCDC;    /* Light grey */
+  padding-right: 20px;
+}
+.email {
+  margin-left: 20px;
+}
+
+
+/* Mobile Styles */
+@media only screen and (max-width: 400px) {
+}
+/* Tablet Styles */
+@media only screen and (min-width: 401px) and (max-width: 1279px) {
+}
+/* Desktop Styles */
+@media only screen and (min-width: 1280px) {
+  .page {
+    width: 1280px;
+    margin: 0 auto;
+  }
+  .menu {
+    width: 1280px;
+  }
+  .header-1,
+  .header-2 {
+    width: 50%;
+  }
+  .header-1 {
+    width: 640px;
+    height: 300px;
+  }
+  .header-2 {
+    width: 640px;
+    height: 300px;
+  }
+  .header-1-about {
+    width: 640px;
+    height: 740px;
+  }
+  .header-2-about {
+    width: 640px;
+    height: 740px;
+  }
+  .feature-container {
+    width: 1280px;
+  }
+  .footer-container {
+    width: 1280px;
+    height: 300px;
+
+}
